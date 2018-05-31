@@ -1,0 +1,20 @@
+@import helper._
+@()(implicit requestHeader: RequestHeader)
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+
+@form(CSRF(routes.HomeController.post())) {
+    <div>
+        <label for="name">なまえ</label>
+        <input type="text" id="name" name="name" placeholder="なまえ">
+    </div>
+    <div>
+        <label for="kana">かな</label>
+        <input type="text" id="kana" name="kana" placeholder="ふりがな">
+    </div>
+
+    <div class="button">
+        <button type="button">送信</button>
+    </div>
+}

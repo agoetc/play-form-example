@@ -1,0 +1,7 @@
+# https://www.playframework.com/documentation/latest/ScalaI18N
+error.required=入力してください
+error.number=数字を入力してください
+error.min={0}より大きい数字を入力ください
+error.max={0}より小さい数字を入力ください
+error.minLength={0}文字以上入力ください
+error.maxLength={0}文字以下の文字数で入力ください
