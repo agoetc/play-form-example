@@ -25,8 +25,8 @@ $(function() {
             data: data,
             contentType: 'application/json',
         }).then(
-            results =>　check(results),
-            error => alert("なにか問題が発生しました")
+            results => $('span').remove(),
+            error => check(error.responseJSON)
         );
     });
 });
